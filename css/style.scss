@@ -26,15 +26,18 @@ img {
     background-color: darkorchid;
 
     &__container {
+        position: relative;
         width: 80%;
         margin: 0 auto;
     }
 
     &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        padding: 25px 20px;
+        height: 100px;
         border: 4px solid greenyellow;
-        text-align: center;
 
         .fortune {
             font-size: 32px;
@@ -45,8 +48,9 @@ img {
     }
 
     &__btn {
+        position: absolute;
+        top: 120px;
         width: 100%;
-        margin-top: 40px;
         text-align: center;
     }
 }
